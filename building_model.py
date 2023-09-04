@@ -1,5 +1,6 @@
-'''Building the recurrent neural network'''
-model = Sequential()
+''' Insert this before the 'Building the recurrent neural network' comment in the second file and delete everything below.
+After the model has been trained, you can return the code under the comment.
+'''
 model.add(LSTM(128, input_shape=(SEQ_LENGTH, len(characters)))) # 128 neurons
 model.add(Dense(len(characters)))
 model.add(Activation('softmax'))
